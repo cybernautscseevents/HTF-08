@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 MuleHunter AI
+# 🕵️‍♂️ Mule Account Money-Trail Hunter
 
 ### Enterprise Financial Crime Graph Intelligence & Autonomous AML Platform
 *Problem Statement FT-03 — Smart Financial Fraud Detection & Forensics*
