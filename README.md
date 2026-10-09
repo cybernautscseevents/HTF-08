@@ -382,6 +382,104 @@ The core analytics engine (`graph_engine.py`) evaluates composite topological me
 
 ---
 
+
+
+---
+
+## 📁 Project Structure
+
+```text
+HACKATOPIA/
+├── 📁 backend/                        # High-Performance FastAPI Python Backend
+│   ├── 📁 engine/                     # Core Topological & Forensic Reasoning Engines
+│   │   ├── graph_engine.py           # NetworkX multigraph, BFS path tracing & topological metrics
+│   │   ├── graphrag_engine.py        # GraphRAG legal narrative synthesis (Gemini + offline fallback)
+│   │   ├── neo4j_service.py          # Neo4j property graph client & Cypher query adapter
+│   │   ├── network_detector.py       # Syndicate community clustering & DFS cycle detection
+│   │   ├── next_hop_engine.py        # Predictive next-hop destination transition probability engine
+│   │   ├── pipeline.py               # Ingestion & deterministic feature engineering pipeline
+│   │   ├── risk_engine.py            # 8-Factor explainable mathematical risk scoring model (0-100)
+│   │   ├── synthetic_generator.py    # Multi-bank crime scenario builder & ledger generator
+│   │   ├── synthetic_pipeline.py     # Deterministic bank account allocator & invariant tracker
+│   │   ├── trail_engine.py           # Temporal forward BFS money-trail reconstruction
+│   │   └── utils.py                  # Forensic calculation utilities & metric helpers
+│   ├── 📁 routers/                    # REST API Endpoints & Route Handlers
+│   │   ├── accounts.py               # Account ledger inspection & 8-factor score lookup
+│   │   ├── actions.py                # Simulated NPCI partial lien hold & audit logging
+│   │   ├── alerts.py                 # Real-time rapid velocity & smurfing alerts feed
+│   │   ├── cases.py                  # Case lifecycle, dual ID resolution & dossier export
+│   │   ├── dashboard.py              # Macro KPI aggregations & exposure metrics
+│   │   ├── graph.py                  # Subgraph topologies & concentric blast radius
+│   │   ├── networks.py               # Multi-mule syndicate network clustering
+│   │   ├── query.py                  # Natural language Cypher / Graph query interface
+│   │   ├── reports.py                # Auto-FIR & SAR preview, generation, and loss override
+│   │   ├── risk.py                   # On-demand account risk evaluation
+│   │   ├── search.py                 # Cross-bank account & transaction fuzzy search
+│   │   ├── synthetic.py              # Synthetic generation triggers & dataset inspection
+│   │   ├── trail.py                  # Directed money-trail extraction by case ID
+│   │   └── transactions.py           # Transaction ingestion & ledger query endpoints
+│   ├── 📁 tests/                      # Comprehensive Automated Test Suite (Pytest)
+│   │   ├── test_engines.py           # Unit tests for graph, velocity, and scoring engines
+│   │   ├── test_integration.py       # Full judge demonstration lifecycle integration test
+│   │   ├── test_reports.py           # FIR / SAR report generation & validation tests
+│   │   └── test_synthetic_pipeline.py# Mathematical ledger invariant & allocator integrity tests
+│   ├── config.py                     # Application configuration & environment settings
+│   ├── database.py                   # SQLAlchemy engine, session maker & SQLite connection
+│   ├── main.py                       # FastAPI application entrypoint, middleware & routing
+│   ├── models.py                     # SQLAlchemy ORM relational models (Accounts, Txns, Cases)
+│   ├── schemas.py                    # Pydantic v2 validation & response serialization schemas
+│   ├── seed.py                       # Canonical deterministic database seeder
+│   └── requirements.txt              # Python backend dependencies
+│
+├── 📁 src/                            # Modern React 19 + TypeScript Frontend Console
+│   ├── 📁 assets/                     # Graphic assets, SVGs, and brand icons
+│   ├── 📁 components/                 # Reusable UI & Visualization Components
+│   │   ├── CortexGraphVisualizer.tsx # 60 FPS HTML5 Canvas engine for 4 visual graph modes
+│   │   └── Toast.tsx                 # System alert toasts & feedback notifications
+│   ├── 📁 context/                    # React Context & State Management
+│   │   └── AppContext.tsx            # Global state (cases, active trail, risk scores, theme)
+│   ├── 📁 data/                       # Client Mock & Neural Fallback Data
+│   │   ├── cortexNeuralData.ts       # Fallback knowledge graph nodes & relationship embeddings
+│   │   └── mockData.ts               # Standalone frontend preview fixtures
+│   ├── 📁 engine/                     # Client-side Graph & Heuristic Utilities
+│   │   ├── graphEngine.ts            # Client-side graph layouts & coordinate allocators
+│   │   ├── nextHopEngine.ts          # Instant interactive next-hop candidate evaluator
+│   │   ├── riskEngine.ts             # Reactive client risk calculations
+│   │   ├── syntheticData.ts          # Frontend synthetic generator stubs
+│   │   └── trailEngine.ts            # Client-side temporal path animator
+│   ├── 📁 hooks/                      # Custom React Hooks
+│   │   └── useTheme.ts               # Theme management (dark/light mode switcher)
+│   ├── 📁 pages/                      # Primary Application Views
+│   │   ├── AlertCenter.tsx           # High-velocity money laundering & smurfing alerts feed
+│   │   ├── Dashboard.tsx             # Macro fraud KPIs, risk distribution & alert feed
+│   │   ├── FIRReport.tsx             # Auto-FIR & SAR studio, 7-point checklist & loss editor
+│   │   ├── MoneyTrail.tsx            # Multi-hop money-trail viewer with 60 FPS DAG playback
+│   │   ├── MuleIntelligence.tsx      # Account deep-dive, 8-factor breakdown & hardware collusion
+│   │   ├── NetworkExplorer.tsx       # Full network force-clustering & cycle loop detection
+│   │   ├── ScamCases.tsx             # Case investigation queue, status management & dossier export
+│   │   └── SyntheticData.tsx         # Multi-bank crime scenario generator & dataset manager
+│   ├── 📁 services/                   # Backend Communication Services
+│   │   └── api.ts                    # Axios / Fetch client connecting to FastAPI backend
+│   ├── 📁 types/                      # Comprehensive TypeScript Definitions
+│   │   └── index.ts                  # Type interfaces for accounts, txns, cases, graph nodes
+│   ├── 📁 utils/                      # Formatting & Presentation Utilities
+│   │   └── formatters.ts             # Currency (INR ₹), timestamp & account formatters
+│   ├── App.tsx                       # Main layout wrapper, navigation sidebar & routing
+│   ├── index.css                     # Custom Fintech design system, dark-mode tokens & CSS styles
+│   └── main.tsx                      # React 19 application root entrypoint
+│
+├── 📁 public/                         # Public web assets (favicons, icons)
+├── index.html                         # Single-page application HTML entrypoint
+├── muletracer.db                      # SQLite relational database storage
+├── package.json                       # Frontend dependencies & NPM scripts
+├── tsconfig.json                      # TypeScript compiler configuration
+├── vite.config.ts                     # Vite build tool configuration & proxy rules
+└── README.md                          # Enterprise documentation & technical architecture
+```
+
+---
+
+
 ## 📊 The 4 Interactive Graph Intelligence Modes
 
 Rather than forcing analysts to parse dense tabular spreadsheets, the platform provides **4 purpose-built visualization modes**:
