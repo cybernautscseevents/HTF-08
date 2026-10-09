@@ -186,24 +186,19 @@ Detection is useless if evidence cannot be acted upon before funds convert to cr
 
 <table>
   <tr>
-    <td><img width="450" src="<img width="1918" height="1078" alt="Screenshot 2026-10-09 122412" src="https://github.com/user-attachments/assets/152e09a9-6b05-4c6b-a176-0912bfeb0313" />
-" /></td>
-    <td><img width="450" src="<img width="1918" height="1075" alt="Screenshot 2026-10-09 122449" src="https://github.com/user-attachments/assets/a3072c12-3991-4ab4-8ff4-991c7892e030" />
-" /></td>
+    <td><img width="450" alt="Dashboard" src="https://github.com/user-attachments/assets/152e09a9-6b05-4c6b-a176-0912bfeb0313" /></td>
+    <td><img width="450" alt="Network Graph" src="https://github.com/user-attachments/assets/a3072c12-3991-4ab4-8ff4-991c7892e030" /></td>
   </tr>
   <tr>
-    <td><img width="450" src="<img width="1912" height="1078" alt="Screenshot 2026-10-09 122503" src="https://github.com/user-attachments/assets/34c528d3-bad4-4fb5-9492-1f423a1ffc53" />
-" /></td>
-    <td><img width="450" src="<img width="1918" height="1078" alt="Screenshot 2026-10-09 122516" src="https://github.com/user-attachments/assets/62baf784-8edf-48fc-9a50-e43ccf50ca39" />
-" /></td>
+    <td><img width="450" alt="Account Investigation" src="https://github.com/user-attachments/assets/34c528d3-bad4-4fb5-9492-1f423a1ffc53" /></td>
+    <td><img width="450" alt="Money Trail" src="https://github.com/user-attachments/assets/62baf784-8edf-48fc-9a50-e43ccf50ca39" /></td>
   </tr>
   <tr>
-    <td><img width="450" src="<img width="1917" height="1078" alt="Screenshot 2026-10-09 122604" src="https://github.com/user-attachments/assets/be73da14-c949-47cb-b4b8-0303bdc700ba" />
-" /></td>
-    <td><img width="450" src="<img width="1918" height="1078" alt="Screenshot 2026-10-09 122613" src="https://github.com/user-attachments/assets/db8a5e07-2032-4ace-b528-c5dd00ea162c" />
-" /></td>
+    <td><img width="450" alt="Analytics Dashboard" src="https://github.com/user-attachments/assets/be73da14-c949-47cb-b4b8-0303bdc700ba" /></td>
+    <td><img width="450" alt="Pattern Detection" src="https://github.com/user-attachments/assets/db8a5e07-2032-4ace-b528-c5dd00ea162c" /></td>
   </tr>
 </table>
+
 
 ## 🌟 Enterprise-Grade Innovations (9 Cutting-Edge Frontiers)
 
